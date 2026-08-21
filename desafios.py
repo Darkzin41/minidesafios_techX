@@ -29,14 +29,16 @@ print(f"A media deste aluno é equivalente a {media:.2f}")
 
 #versao com com condicionais 
 nota1, nota2, nota3 = map(float, input("Digite as 3 notas do aluno: ").split())
-media = (nota1 + nota2 + nota3)/3
-print(f"A media deste aluno é equivalente a {media:.2f}")
-if media >= 7.0:
-    print("Aluno aprovado na disciplina")
-elif media >= 9.0: 
-    print("Aluno aprovado com louvor na disciplina")
+notas = [nota1, nota2, nota3]
+media = media = sum(notas) / len(notas)
+if media >= 9.0:
+    print("Aluno aprovado com louvor")
+
+elif media >= 7.0:
+    print("Aluno aprovado")
+
 else:
-    print("Aluno reprovado na disciplina")
+    print("Aluno reprovado")
 
 #calculadora de desconto
 valor, desconto = map(float, input("Digite o preço do produto e o percentual do desconto que ganhou: ").split())
