@@ -37,6 +37,9 @@ if media >= 9.0:
 elif media >= 7.0:
     print("Aluno aprovado")
 
+elif media >= 5.0:
+    print("Aluno em recuperação")
+    
 else:
     print("Aluno reprovado")
 
