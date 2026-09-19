@@ -115,12 +115,14 @@ html {
 
 /* Organiza os campos verticalmente com espaçamento uniforme. */
 .formulario-contato {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 18px;
 }
 
 .formulario-contato__grupo {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 18px;
     margin: 0;
     padding: 0;
@@ -134,13 +136,24 @@ html {
     font-weight: bold;
 }
 
+.campos-contato {
+    display: flex;
+    gap: 18px;
+}
+
+.campos-contato .campo-formulario {
+    flex: 1;
+}
+
 .campo-formulario {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 6px;
 }
 
 .campo-formulario__rotulo {
     color: #26364d;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -151,6 +164,7 @@ html {
     border: 1px solid #a9bfd5;
     border-radius: 6px;
     background: #f8fbff;
+    font-size: 1rem;
     outline: none;
 }
 
@@ -177,6 +191,7 @@ html {
 .formulario-contato__botao {
     min-height: 44px;
     margin-top: 10px;
+    padding: 12px 20px;
     border: 0;
     border-radius: 6px;
     background: #0878d1;
@@ -204,6 +219,10 @@ html {
     .conteudo-principal {
         grid-template-columns: 1fr;
         margin-top: 24px;
+    }
+
+    .campos-contato {
+        flex-direction: column;
     }
 
     .painel-contato {
