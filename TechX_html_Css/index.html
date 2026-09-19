@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Blog</title>
+</head>
+
+<body class="pagina">
+
+    <header class="cabecalho">
+        <h1 class="titulo-site">Meu Blog</h1>
+
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="navegacao__link" href="#artigo1">Artigo 1</a>
+            <a class="navegacao__link" href="#artigo2">Artigo 2</a>
+            <a class="navegacao__link" href="#formulario">Formulário</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal organizado em cartões de artigos. -->
+    <main class="conteudo-principal">
+
+        <article class="cartao-artigo" id="artigo1">
+            <h2 class="cartao-artigo__titulo">Primeiro Artigo</h2>
+
+            <p class="cartao-artigo__texto">
+                Este é o primeiro artigo do blog. Aqui podemos adicionar
+                informações sobre diferentes assuntos.
+            </p>
+
+            <img class="cartao-artigo__imagem"
+                src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=900&q=80"
+                alt="Macaco sentado em um galho"
+                loading="lazy"
+            >
+        </article>
+
+        <article class="cartao-artigo" id="artigo2">
+            <h2 class="cartao-artigo__titulo">Segundo Artigo</h2>
+
+            <p class="cartao-artigo__texto">
+                Este é o segundo artigo do blog, criado utilizando
+                elementos semânticos do HTML.
+            </p>
+
+            <img class="cartao-artigo__imagem"
+                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=80"
+                alt="Elefante em seu habitat natural"
+                loading="lazy"
+            >
+        </article>
+
+    </main>
+
+    <!-- Painel separado para concentrar o formulário de contato. -->
+    <aside class="painel-contato" id="formulario">
+
+        <h2 class="painel-contato__titulo">Formulário de Contato</h2>
+
+        <!-- Cada campo mantém seu rótulo e controle agrupados. -->
+        <form class="formulario-contato" action="index.html" method="get">
+            <fieldset class="formulario-contato__grupo">
+                <legend class="formulario-contato__legenda">Dados para contato</legend>
+
+                <div class="campo-formulario">
+                    <label class="campo-formulario__rotulo" for="name">Nome:</label>
+                    <input
+                        class="campo-formulario__controle"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Mínimo 3 letras"
+                        minlength="3"
+                        required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label class="campo-formulario__rotulo" for="email">E-mail:</label>
+                    <input
+                        class="campo-formulario__controle"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@dominio.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label class="campo-formulario__rotulo" for="age">Idade:</label>
+                    <input
+                        class="campo-formulario__controle"
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="18"
+                        max="20"
+                        placeholder="18 a 20"
+                        required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label class="campo-formulario__rotulo" for="assunto">Assunto:</label>
+                    <select
+                        class="campo-formulario__controle"
+                        name="assunto"
+                        id="assunto"
+                        required
+                    >
+                        <option value="">Selecione um assunto</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="educacao">Educação</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                 </div>
+
+                <div class="campo-termos">
+                    <input
+                        class="campo-termos__caixa"
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        required
+                    >
+                    <label class="campo-termos__rotulo" for="termos">Aceito os termos</label>
+                </div>
+            </fieldset>
+
+            <button class="formulario-contato__botao" type="submit">Enviar</button>
+
+        </form>
+
+    </aside>
+
+    <footer class="rodape">
+        <p class="rodape__texto">&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

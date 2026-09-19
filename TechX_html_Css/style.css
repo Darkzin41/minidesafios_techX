@@ -1,0 +1,212 @@
+/* Padroniza medidas e remove espaçamentos padrão do navegador. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+.pagina,
+.pagina button,
+.pagina input,
+.pagina select,
+.pagina textarea {
+    font: inherit;
+}
+
+.pagina button,
+.pagina input,
+.pagina select,
+.pagina textarea {
+    color: inherit;
+}
+
+.pagina {
+    min-height: 100vh;
+    background: #eef4fb;
+    color: #172033;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: 32px 20px;
+    background: #0b1220;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo-site {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+}
+
+.navegacao__link {
+    color: #7dc4ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navegacao__link:hover,
+.navegacao__link:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Grid responsivo para os cartões dos artigos. */
+.conteudo-principal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cartao-artigo {
+    padding: 24px;
+    border: 1px solid #c9d8e8;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(11, 18, 32, 0.08);
+}
+
+.cartao-artigo__titulo,
+.painel-contato__titulo {
+    margin-bottom: 10px;
+    color: #0759a5;
+}
+
+.cartao-artigo__imagem {
+    display: block;
+    width: 100%;
+    max-height: 220px;
+    margin-top: 18px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.painel-contato {
+    width: min(100% - 40px, 560px);
+    margin: 0 auto 40px;
+    padding: 30px;
+    border: 1px solid #c9d8e8;
+    border-top: 5px solid #0878d1;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(11, 18, 32, 0.12);
+}
+
+.painel-contato__titulo {
+    text-align: center;
+}
+
+/* Organiza os campos verticalmente com espaçamento uniforme. */
+.formulario-contato {
+    display: grid;
+    gap: 18px;
+}
+
+.formulario-contato__grupo {
+    display: grid;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.formulario-contato__legenda {
+    margin-bottom: 2px;
+    color: #0759a5;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.campo-formulario {
+    display: grid;
+    gap: 6px;
+}
+
+.campo-formulario__rotulo {
+    color: #26364d;
+    font-weight: bold;
+}
+
+.campo-formulario__controle {
+    width: 100%;
+    min-height: 44px;
+    padding: 9px 12px;
+    border: 1px solid #a9bfd5;
+    border-radius: 6px;
+    background: #f8fbff;
+    outline: none;
+}
+
+.campo-formulario__controle:focus {
+    border-color: #0878d1;
+    box-shadow: 0 0 0 3px rgba(8, 120, 209, 0.18);
+}
+
+.campo-termos__caixa {
+    accent-color: #0878d1;
+}
+
+.campo-termos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.campo-termos__rotulo {
+    cursor: pointer;
+}
+
+.formulario-contato__botao {
+    min-height: 44px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #0878d1;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.formulario-contato__botao:hover,
+.formulario-contato__botao:focus {
+    background: #064f91;
+    transform: translateY(-1px);
+}
+
+.rodape {
+    padding: 24px 20px;
+    background: #0b1220;
+    color: #b9c9dc;
+    text-align: center;
+}
+
+/* Em telas menores, os artigos passam a ocupar uma única coluna. */
+@media (max-width: 700px) {
+    .conteudo-principal {
+        grid-template-columns: 1fr;
+        margin-top: 24px;
+    }
+
+    .painel-contato {
+        padding: 24px 20px;
+    }
+}
