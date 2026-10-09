@@ -10,3 +10,6 @@ produtos = [
 # A função sorted() percorre os itens de produtos e cria uma nova lista ordenada. O argumento key diz qual valor deve ser usado na comparação
 produtos_crescentes = sorted(produtos, key=lambda p: p[1])
 produtos_decrescentes = sorted(produtos, key=lambda p: p[1], reverse=True)
+
+print(f"Produtos ordenados por preço crescente: {produtos_crescentes}")
+print(f"Produtos ordenados por preço decrescente: {produtos_decrescentes}")
