@@ -1,3 +1,5 @@
+#Script Python Principal: Um programa que leia um arquivo de dados (CSV ou TXT) contendo informações como e-mail, CPF, telefone e data.
+
 # Em Python, o with é uma estrutura utilizada para gerenciar recursos automaticamente, garantindo que eles sejam liberados corretamente após o uso, mesmo que aconteça algum erro durante a execução.
 # Ele é muito utilizado na manipulação de arquivos, mas também pode ser aplicado em conexões com bancos de dados, gerenciamento de locks e outros recursos.
 
