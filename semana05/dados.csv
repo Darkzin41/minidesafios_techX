@@ -1,4 +1,8 @@
-nome,email,cpf,telefone,data
-Ana,ana@email.com,123.456.789-00,(98) 91234-5678,2026-10-10
-Bruno,bruno@email.com,987.654.321-00,(98) 99876-5432,2026-10-11
-Carlos,carlos@email.com,111.222.333-44,(98) 98888-7777,2026-10-12
+nome,email,cpf,telefone,data,idade
+Ana,ana@email.com,123.456.789-00,(98) 91234-5678,2026-10-10,25
+Bruno,brunoemail.com,987.654.321-00,(98) 99876-5432,2026-10-11,20
+Carla,carla@email.com,12345678900,(98) 98888-7777,2026-10-12,22
+Diego,diego@email.com,123.456.789-00,98988887777,2026-10-12,17
+Eva,eva@email.com,987.654.321-00,(98) 98765-4321,12/10/2026,21
+Felipe,felipe@email.com,123.456.789-00,(98) 99999-1111,2026-10-13,abc
+Gabriela,gabi@email.com,123.456.789-00,(98) 98888-0000,2026-10-13,30

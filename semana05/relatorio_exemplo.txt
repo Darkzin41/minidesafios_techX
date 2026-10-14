@@ -1,0 +1,6 @@
+RELATÓRIO DE ANÁLISE
+Total de registros: 7
+Válidos: 2
+Inválidos: 5
+Nomes válidos: Ana, Gabriela
+Nomes inválidos: Bruno, Carla, Diego, Eva, Felipe

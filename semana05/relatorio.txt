@@ -1,0 +1,15 @@
+RELATÓRIO DE ANÁLISE DE DADOS
+Total de registros: 7
+Válidos: 2
+Inválidos: 5
+
+REGISTROS VÁLIDOS:
+- Ana (25 anos)
+- Gabriela (30 anos)
+
+REGISTROS INVÁLIDOS:
+- Bruno: e-mail inválido
+- Carla: CPF fora do formato
+- Diego: telefone fora do formato
+- Eva: data fora do formato
+- Felipe: invalid literal for int() with base 10: 'abc'
