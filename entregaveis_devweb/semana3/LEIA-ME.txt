@@ -1,0 +1,22 @@
+ATIVIDADE - JAVASCRIPT - SEMANA 03
+
+Arquivos:
+- bloco1.js: variáveis, tipos e template literals.
+- bloco2.js: funções, hoisting e arrow function.
+- bloco3.js: if/else, switch, for e while.
+
+COMO EXECUTAR
+
+No terminal, abra esta pasta e digite:
+
+node bloco1.js
+node bloco2.js
+node bloco3.js
+
+Também é possível colar o código no console do navegador (F12).
+
+OBSERVAÇÃO
+
+Nos blocos 1 e 2, os erros TypeError e ReferenceError são
+intencionais: o try/catch mostra a mensagem e deixa o restante
+continuar normalmente. Não precisa instalar bibliotecas.
